@@ -11,5 +11,9 @@
     "pingid"
   ],
   "author": "ssahu",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "speakeasy": "^2.0.0"
+  }
 }
