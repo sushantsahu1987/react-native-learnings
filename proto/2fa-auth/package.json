@@ -1,5 +1,5 @@
 {
-  "name": "auth",
+  "name": "2fa-auth",
   "version": "1.0.0",
   "description": "ping id tutorial",
   "main": "app.js",
