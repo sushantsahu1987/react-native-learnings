@@ -25,3 +25,13 @@ Activate the 2.7 enviorment by executing the following instruction.
 4. npm install -g node-gyp
 5. npm install ursa
 
+
+#Links:
+
+1. 2FA Library
+https://www.npmjs.com/package/speakeasy
+
+2. QR Code
+https://www.npmjs.com/package/qrcode 
+
+
