@@ -9,6 +9,8 @@ https://www.styled-components.com/docs/basics
 2. Bootstrap
 https://blog.logrocket.com/how-to-use-bootstrap-with-react-a354715d1121
 
+3. prop-types
+https://www.npmjs.com/package/prop-types
 
 #Notes:
 
