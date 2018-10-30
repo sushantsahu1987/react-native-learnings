@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const speakeasy = require('speakeasy');
 
 app.get('/', (req,res) => {
     res.set('Content-Type','image/png')
