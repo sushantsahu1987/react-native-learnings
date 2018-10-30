@@ -31,3 +31,11 @@ Generate pub & key.pem certificates via these commands:
 1. openssl genrsa -out ./my-server.key.pem 2048
 2.  openssl rsa -in ./my-server.key.pem -pubout -out ./my-server.pub
 
+#Links:
+
+1. 2FA Library
+https://www.npmjs.com/package/speakeasy
+
+2. QR Code
+https://www.npmjs.com/package/qrcode 
+
