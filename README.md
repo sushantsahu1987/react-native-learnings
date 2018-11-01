@@ -9,6 +9,8 @@ https://www.styled-components.com/docs/basics
 2. Bootstrap
 https://blog.logrocket.com/how-to-use-bootstrap-with-react-a354715d1121
 
+3. prop-types
+https://www.npmjs.com/package/prop-types
 
 #Notes:
 
@@ -25,6 +27,9 @@ Activate the 2.7 enviorment by executing the following instruction.
 4. npm install -g node-gyp
 5. npm install ursa
 
+Generate pub & key.pem certificates via these commands:
+1. openssl genrsa -out ./my-server.key.pem 2048
+2.  openssl rsa -in ./my-server.key.pem -pubout -out ./my-server.pub
 
 #Links:
 
@@ -33,5 +38,4 @@ https://www.npmjs.com/package/speakeasy
 
 2. QR Code
 https://www.npmjs.com/package/qrcode 
-
 
