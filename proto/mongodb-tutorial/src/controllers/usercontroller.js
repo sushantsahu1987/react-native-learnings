@@ -1,14 +1,19 @@
-const usercontroller = {};
 const token = require('../token');
+const utils = require('../utils');
+const usercontroller = {};
 
 usercontroller.login = (req, resp) => {
+
+    console.log('login: ');
+    const {email,password} = req.body;
     const user = {
-        email: "test@gmail.com",
-        password: "abcd"
+        email,
+        password
     };
+
     const tkn = token.generateToken(user)
     resp.send({
-        item: 'login',
+        msg: "ok",
         token: tkn,
     });
 }
@@ -21,8 +26,23 @@ usercontroller.auth = (req, resp, next) => {
 
 
 usercontroller.register = (req, resp) => {
+
+    const {email,password} = req.body;
+    const user = {
+        email,
+        password
+    };
+    const hash = utils.hash(user.password);
+    console.log(`hash ${hash}`);
+
+    const verify = utils.verifyHash(user.password, hash);
+    console.log(`verify ${verify}`);
+    console.log(user);
+
+    const tkn = token.generateToken(user)
     resp.send({
-        item: 'register'
+        msg: "ok",
+        token: tkn
     });
 }
 

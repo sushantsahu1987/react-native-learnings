@@ -31,6 +31,11 @@ Generate pub & key.pem certificates via these commands:
 1. openssl genrsa -out ./my-server.key.pem 2048
 2.  openssl rsa -in ./my-server.key.pem -pubout -out ./my-server.pub
 
+#HELP:
+
+1. https://github.com/bradtraversy/restify_customer_api 
+
+
 #Links:
 
 1. 2FA Library
