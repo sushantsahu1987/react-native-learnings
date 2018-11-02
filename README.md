@@ -31,6 +31,19 @@ Generate pub & key.pem certificates on terminal via these commands:
 1. openssl genrsa -out ./my-server.key.pem 2048
 2.  openssl rsa -in ./my-server.key.pem -pubout -out ./my-server.pub
 
-
 Generate pub & key.pem certificates on the fly using crypto or ursa :
 1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto
+
+#HELP:
+
+1. https://github.com/bradtraversy/restify_customer_api 
+
+
+#Links:
+
+1. 2FA Library
+https://www.npmjs.com/package/speakeasy
+
+2. QR Code
+https://www.npmjs.com/package/qrcode 
+

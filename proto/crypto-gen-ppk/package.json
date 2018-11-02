@@ -1,18 +1,16 @@
 {
-  "name": "neo4j-tutorial",
+  "name": "crypto-gen-ppk",
   "version": "1.0.0",
-  "description": "A tutorial with neo4j",
+  "description": "Using node crypto module to generate public private key",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "neo4j",
-    "nodejs"
+    "nodejs",
+    "security",
+    "crypto"
   ],
   "author": "ssahu",
-  "license": "ISC",
-  "dependencies": {
-    "neo4j": "^2.0.0-RC2"
-  }
+  "license": "ISC"
 }
