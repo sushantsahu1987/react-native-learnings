@@ -27,9 +27,12 @@ Activate the 2.7 enviorment by executing the following instruction.
 4. npm install -g node-gyp
 5. npm install ursa
 
-Generate pub & key.pem certificates via these commands:
+Generate pub & key.pem certificates on terminal via these commands:
 1. openssl genrsa -out ./my-server.key.pem 2048
 2.  openssl rsa -in ./my-server.key.pem -pubout -out ./my-server.pub
+
+Generate pub & key.pem certificates on the fly using crypto or ursa :
+1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto
 
 #HELP:
 
