@@ -1,7 +1,7 @@
 {
-  "name": "ursa-certificate",
+  "name": "crypto-encryption",
   "version": "1.0.0",
-  "description": "A demo application that uses openssl to generate private/public certificates",
+  "description": "Encrypt data using nodejs crypto module"",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,5 @@
   "author": "ssahu",
   "license": "ISC",
   "dependencies": {
-    "ursa": "^0.9.4"
   }
 }
