@@ -5,7 +5,10 @@ const usercontroller = {};
 usercontroller.login = (req, resp) => {
 
     console.log('login: ');
-    const {email,password} = req.body;
+    const {
+        email,
+        password
+    } = req.body;
     const user = {
         email,
         password
@@ -19,15 +22,27 @@ usercontroller.login = (req, resp) => {
 }
 
 usercontroller.auth = (req, resp, next) => {
-    console.log('authenticate route');
-    const decodedtkn = token.verifyToken(tkn);
-    next();
+    console.log(`authenticate route ${req.query.token}`);
+    const tkn = req.query.token;
+    try {
+        const decodedtkn = token.verifyToken(tkn);
+        console.log(`authentication success ${decodedtkn}`);
+        next();
+    } catch (err) {
+        console.log('authentication failed');
+        resp.send({
+            msg: "fail"
+        });
+    }
 }
 
 
 usercontroller.register = (req, resp) => {
 
-    const {email,password} = req.body;
+    const {
+        email,
+        password
+    } = req.body;
     const user = {
         email,
         password

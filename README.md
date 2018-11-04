@@ -1,6 +1,7 @@
 # syzero-password-manager
 A secure credential manager for the paranoid
 
+
 #Packages:
 
 1. Styled Components
@@ -37,7 +38,7 @@ Generate pub & key.pem certificates on the fly using crypto or ursa :
 #HELP:
 
 1. https://github.com/bradtraversy/restify_customer_api 
-
+2. https://stackoverflow.com/questions/39166700/the-this-object-is-empty-in-presave
 
 #Links:
 
@@ -52,3 +53,6 @@ https://superuser.com/questions/1247947/how-to-name-openssh-public-and-private-k
 
 4. NodeJS Streams
 https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93
+
+5. Generate RSA Keys from command
+https://rietta.com/blog/2012/01/27/openssl-generating-rsa-key-from-command/
