@@ -39,6 +39,7 @@ Generate pub & key.pem certificates on the fly using crypto or ursa :
 
 1. https://github.com/bradtraversy/restify_customer_api 
 2. https://stackoverflow.com/questions/39166700/the-this-object-is-empty-in-presave
+3. https://gist.github.com/coolaj86/f6f36efce2821dfb046d
 
 #Links:
 
