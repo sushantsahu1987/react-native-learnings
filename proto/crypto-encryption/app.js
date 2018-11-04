@@ -21,8 +21,9 @@ let key_privatekey = {
     passphrase: pass_phrase,
     padding: crypto.constants.RSA_PKCS1_PADDING
 }
-
-let buffer = new Buffer(encrypt_text);
+key_privatekey = JSON.stringify(key_privatekey);
+const buffer = Buffer.from(encrypt_text);
+// let encryptedContent = crypto.privateEncrypt(privatekey.toString(), buffer);
 let encryptedContent = crypto.privateEncrypt(privatekey.toString(), buffer);
 console.log(encryptedContent.toString("base64"));
 
@@ -31,7 +32,8 @@ let key_publickey = {
     passphrase: pass_phrase,
     padding: crypto.constants.RSA_PKCS1_PADDING
 }
-
+key_publickey = JSON.stringify(key_publickey);
+// let decryptedContent = crypto.publicDecrypt(publickey.toString(), encryptedContent);
 let decryptedContent = crypto.publicDecrypt(publickey.toString(), encryptedContent);
 decryptedContent = decryptedContent.toString("utf8");
 console.log(decryptedContent);
