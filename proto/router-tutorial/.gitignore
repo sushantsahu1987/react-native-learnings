@@ -75,5 +75,3 @@ typings/
 # FuseBox cache
 .fusebox/
 
-# Prod config
-prod.config
