@@ -1,6 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 const mongoose = require('mongoose');
+const xss = require('xss');
+
 const Todo = require('./Todo');
 
 const prod = path.join(__dirname, '/prod.config');
@@ -36,13 +38,33 @@ const app = () => {
     // setTimeout(update, 9000);
     // setTimeout(count, 15000);
     // setTimeout(findBy, 15000);
-    // count();
-    // findBy();
+    // setTimeout(insertSave, 5000);
     close();
 }
 
+const insertSave = () => {
+    console.log('insert save');
+
+    const name = "<scri<script>pt>alert('stuff u') go to chillis</script>";
+    console.log(name);
+    const cleanedname = xss(name);
+    console.log(cleanedname);
+    const doc = new Todo({
+        name: cleanedname
+    });
+    doc.save(err => {
+        if (err) {
+            console.log(`insert error : ${err}`);
+        }
+        console.log("inserted successfully");
+    })
+}
+
+
 const findBy = () => {
-    Todo.find({name: "let us eat"}, (err, docs) => {
+    Todo.find({
+        name: "let us eat"
+    }, (err, docs) => {
         if (err) {
             console.log(`findBy error : ${err}`);
         }
@@ -66,9 +88,9 @@ const count = () => {
 }
 
 const update = () => {
-    Todo.findByIdAndUpdate("5bdec380b3da640fa0b0b627",{
+    Todo.findByIdAndUpdate("5bdec380b3da640fa0b0b627", {
         $set: {
-            name:"take the dog out for a walk !"
+            name: "take the dog out for a walk !"
         }
     }, (err, doc) => {
         if (err) {
