@@ -44,3 +44,8 @@ https://www.npmjs.com/package/speakeasy
 2. QR Code
 https://www.npmjs.com/package/qrcode 
 
+3. Private/Public Key Naming
+https://superuser.com/questions/1247947/how-to-name-openssh-public-and-private-key-pairs
+
+4. NodeJS Streams
+https://medium.freecodecamp.org/node-js-streams-everything-you-need-to-know-c9141306be93
