@@ -41,6 +41,7 @@ Generate pub & key.pem certificates on the fly using crypto or ursa :
 2. https://stackoverflow.com/questions/39166700/the-this-object-is-empty-in-presave
 3. https://gist.github.com/coolaj86/f6f36efce2821dfb046d
 4. https://www.toptal.com/nodejs/secure-rest-api-in-nodejs
+5. https://medium.com/@brandonstilson/lets-encrypt-files-with-node-85037bea8c0e
 
 #Links:
 

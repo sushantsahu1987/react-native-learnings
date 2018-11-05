@@ -20,23 +20,37 @@ const readfile = (name) => {
 //  You cannot return data from a async function
 const app = async () => {
 
-    let privatekey;
-    let data = {
-        name: "sushant"
+
+    const IV_LENGTH = 16; // For AES, this is always 16
+    const initVect = crypto.randomBytes(IV_LENGTH);
+
+    const encrypt = (text, CIPHER_KEY) => {
+        const cipher = crypto.createCipheriv('aes256', CIPHER_KEY, initVect);
+        var crypted = cipher.update(text, 'utf8', 'hex')
+        crypted += cipher.final('hex');
+        return crypted;
     }
-    data = JSON.stringify(data);
+
+    const getCipherKey = (password) => {
+        return crypto.createHash('sha256').update(password).digest();
+    }
+
+    const decrypt = (text, CIPHER_KEY) => {
+        const decipher = crypto.createDecipheriv('aes256', CIPHER_KEY, initVect);
+        var dec = decipher.update(text, 'hex', 'utf8')
+        dec += decipher.final('utf8');
+        return dec;
+    }
+
     try {
-        privatekey =  await readfile("./private.pem");
+        const password = await readfile('private.pem');
+        const CIPHER_KEY = getCipherKey(password);
+        const text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent auctor lacinia quam ut pretium. Sed enim nisl, pharetra eget";
+        const content = encrypt(text, CIPHER_KEY)
+        console.log(decrypt(content, CIPHER_KEY));
     } catch (err) {
         console.log(err);
-    }   
-    console.log(privatekey);
-    const key = crypto.pbkdf2Sync(privatekey,"salt", 100000, 256, "sha512");
-    console.log(key.toString("hex").length);
-
-    const buffer = Buffer.from(data);
-    const enccontent = crypto.privateEncrypt(key, buffer);
-    console.log(enccontent.toString("hex"));
+    }
 
 }
 
