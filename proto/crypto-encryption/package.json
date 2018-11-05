@@ -1,17 +1,16 @@
 {
   "name": "crypto-encryption",
   "version": "1.0.0",
-  "description": "Encrypt data using nodejs crypto module"",
+  "description": "Encrypt data using nodejs crypto module",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "nodejs",
-    "ursa"
+    "crypto"
   ],
   "author": "ssahu",
   "license": "ISC",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
