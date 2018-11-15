@@ -4,8 +4,8 @@
   "description": "A world of redis",
   "main": "app.js",
   "scripts": {
-    "start:prod": "ENV=PROD node app.js",
-    "start:dev": "ENV=DEV node app.js"
+    "start:dev": "DEV=DEBUG PORT=3000 node -r ./config.js app.js",
+    "start:prod": "DEV=PROD PORT=3000 node -r ./config.js app.js"
   },
   "keywords": [
     "redis",
