@@ -2,6 +2,17 @@
 
 A secure credential manager for the paranoid
 
+### Projects within
+    
+    1. 2fa-auth
+    2. crypto-encryption
+    3. crypto-gen-ppk
+    4. crypto-pub-priv-sign
+    5. mongodb-tutorial
+    6. redis-tutorial
+    7. router-tutorial
+    8. styled-comp-bootstrap
+    9. webapp-2fa-auth
 
 ### Packages
 
