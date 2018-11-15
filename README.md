@@ -75,3 +75,4 @@ A secure credential manager for the paranoid
     
     6. Redis
     https://redislabs.com/
+    https://www.npmjs.com/package/redis
