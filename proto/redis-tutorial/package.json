@@ -1,0 +1,22 @@
+{
+  "name": "redis-tutorial",
+  "version": "1.0.0",
+  "description": "A world of redis",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "redis",
+    "javascript",
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "ssahu",
+  "license": "ISC",
+  "dependencies": {
+    "add": "^2.0.6",
+    "redis": "^2.8.0",
+    "yarn": "^1.12.3"
+  }
+}
