@@ -4,7 +4,8 @@
   "description": "A world of redis",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:prod": "ENV=PROD node app.js",
+    "start:dev": "ENV=DEV node app.js"
   },
   "keywords": [
     "redis",
