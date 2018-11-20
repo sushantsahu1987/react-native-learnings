@@ -13,7 +13,7 @@ A secure credential manager for the paranoid
     7. router-tutorial
     8. styled-comp-bootstrap
     9. webapp-2fa-auth
-   10. graphql-tutorial
+    10. graphql-tutorial
 
 ### Packages
 
@@ -47,6 +47,9 @@ A secure credential manager for the paranoid
 
     Generate pub & key.pem certificates on the fly using crypto or ursa :
     1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto
+    
+    How to make http calls over graphql server:
+    1. http://localhost:3000/graphql?query={user(id:%2223%22){name}}
 
 ### Help
 
