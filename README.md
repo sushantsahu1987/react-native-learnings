@@ -13,6 +13,7 @@ A secure credential manager for the paranoid
     7. router-tutorial
     8. styled-comp-bootstrap
     9. webapp-2fa-auth
+   10. graphql-tutorial
 
 ### Packages
 
@@ -54,6 +55,7 @@ A secure credential manager for the paranoid
     3. https://gist.github.com/coolaj86/f6f36efce2821dfb046d
     4. https://www.toptal.com/nodejs/secure-rest-api-in-nodejs
     5. https://medium.com/@brandonstilson/lets-encrypt-files-with-node-85037bea8c0e
+    6. https://graphql.github.io/learn/serving-over-http/
 
 ### Links
 
