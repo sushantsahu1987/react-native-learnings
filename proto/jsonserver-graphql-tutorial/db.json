@@ -1,7 +1,11 @@
 {
   "users": [
-    { "id": "23", "name": "sushant", "age": 31 },
-    { "id": "12", "name": "khushboo", "age": 28 },
-    { "id": "11", "name": "oreo", "age": 1 }
+    { "id": "23", "name": "sushant", "age": 31, "companyId":"1" },
+    { "id": "12", "name": "khushboo", "age": 28, "companyId":"2" },
+    { "id": "11", "name": "oreo", "age": 1, "companyId":"2" }
+  ],
+  "companies": [
+    { "id": "1", "name": "google", "description": "i have an iphone" },
+    { "id": "2", "name": "apple", "description": "i can search" }
   ]
 }
