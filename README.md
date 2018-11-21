@@ -73,7 +73,19 @@ A secure credential manager for the paranoid
         }
         
     3. Query Fragment:
+         {
+            result1: [user](id:1) {
+                ...fragment_name
+            }
+            result1: [user](id:1) {
+                ...fragment_name
+            }
+        }
         
+        fragment [fragment_name] on [Model] {
+            attr1,
+            attr2,
+        }
         
 
 ### Help
