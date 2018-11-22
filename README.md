@@ -50,6 +50,43 @@ A secure credential manager for the paranoid
     
     How to make http calls over graphql server:
     1. http://localhost:3000/graphql?query={user(id:%2223%22){name}}
+    
+    GraphQL 
+    1. Format:
+        query [name]{
+            [user](id:1) {
+                attr1,
+                attr2,
+            }
+        }
+        
+    2. Multiple Query:
+        {
+            result1: [user](id:1) {
+                attr1,
+                attr2,
+            }
+            result1: [user](id:1) {
+                attr1,
+                attr2,
+            }
+        }
+        
+    3. Query Fragment:
+         {
+            result1: [user](id:1) {
+                ...fragment_name
+            }
+            result1: [user](id:1) {
+                ...fragment_name
+            }
+        }
+        
+        fragment [fragment_name] on [Model] {
+            attr1,
+            attr2,
+        }
+        
 
 ### Help
 
