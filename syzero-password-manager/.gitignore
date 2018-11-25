@@ -22,8 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Prod Env
+# prod env
 prod.env
 
-# Prod Config
-prod.config.js
+# prod config
+prod.pwdutils.js
