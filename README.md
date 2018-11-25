@@ -14,6 +14,7 @@ A secure credential manager for the paranoid
     8. styled-comp-bootstrap
     9. webapp-2fa-auth
     10. graphql-tutorial
+    11. jsonserver-graphql-tutorial
 
 ### Packages
 
