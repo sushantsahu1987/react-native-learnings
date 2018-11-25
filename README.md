@@ -118,3 +118,8 @@ A secure credential manager for the paranoid
     6. Redis
     https://redislabs.com/
     https://www.npmjs.com/package/redis
+    
+    7. Lowdb
+    https://www.npmjs.com/package/lowdb
+    
+    
