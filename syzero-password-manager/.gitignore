@@ -27,3 +27,9 @@ prod.env
 
 # prod config
 prod.pwdutils.js
+
+# certificate
+private.certificate.key
+
+# schema
+schema.json
