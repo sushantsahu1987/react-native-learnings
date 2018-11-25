@@ -13,7 +13,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start:prodserver": "DEV=PROD nodemon -r ./server/config.js ./server/",
-    "start:devserver": "DEV=DEBUG nodemon -r ./server/config.js ./server/"
+    "start:devserver": "DEV=DEBUG nodemon -r ./server/config.js ./server/",
+    "start:build": "DEV=DEBUG nodemon -r ./server/config.js ./server/scripts/faker.build.js"
   },
   "eslintConfig": {
     "extends": "react-app"

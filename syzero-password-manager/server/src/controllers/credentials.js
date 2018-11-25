@@ -3,7 +3,8 @@ const uuidv4 = require('uuid/v4');
 
 const {
     dbcontroller,
-    Credentials
+    Credentials,
+    Vault
 } = require('../db');
 const {
     save_success,
