@@ -15,7 +15,6 @@ const CompanyType = new GraphQLObjectType({
         return axios.get(`http://localhost:3000/companies/${parentValue.id}/users`)
                     .then(resp => resp.data);
       }
-
     }
   })
 });
