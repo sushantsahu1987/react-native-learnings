@@ -1,5 +1,5 @@
 {
-  "name": "post-req-graphql-tutorial",
+  "name": "mutation-graphql-tutorial",
   "version": "1.0.0",
   "description": "A tutorial exploring how authentication & post request would work with graph ql",
   "main": "app.js",
