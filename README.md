@@ -73,7 +73,7 @@ A secure credential manager for the paranoid
         }
         
     3. Query Fragment:
-         {
+        {
             result1: [user](id:1) {
                 ...fragment_name
             }
@@ -87,6 +87,13 @@ A secure credential manager for the paranoid
             attr2,
         }
         
+    4. Mutation:
+        mutation {
+            [fn-name](args) {
+                id,
+                name
+            }
+        }        
 
 ### Help
 
