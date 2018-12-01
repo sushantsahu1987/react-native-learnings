@@ -49,7 +49,14 @@ A secure credential manager for the paranoid
     1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto
     
     How to make http calls over graphql server:
-    1. http://localhost:3000/graphql?query={user(id:%2223%22){name}}
+    1. Get Request:
+        http://localhost:3000/graphql?query={user(id:%2223%22){name}}
+        
+    2. Post Request:
+        http://localhost:3000/graphql
+        { "query": "mutation  ($id: String!, $name: String!) { addUser(id: $id, name: $name) { id, name } } ", 
+        "variables": { "id": "1", "name":"sushant" } }
+
     
     GraphQL 
     1. Format:
