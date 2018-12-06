@@ -2,6 +2,7 @@ const graphql = require('graphql');
 const {
     GraphQLObjectType,
     GraphQLString,
+    GraphQLInt,
     GraphQLSchema,
     GraphQLNonNull,
     GraphQLList
@@ -53,9 +54,12 @@ const RootQuery = new GraphQLObjectType({
         users: {
             type: new GraphQLNonNull(new GraphQLList(UserType)),
             args: {
-
+                first: {type: GraphQLInt},
+                offset: {type: GraphQLInt}
             },
             resolve(parentValue, args) {
+                console.log(args.first);
+                console.log(args.offset);
                 return users;
             }
         }
@@ -76,8 +80,10 @@ const Mutation = new GraphQLObjectType({
                     type: GraphQLString
                 }
             },
-            resolve(parentValue, { id, name }) {
-                users.push({ id, name });
+            resolve(parentValue, args) {
+                console.log('mutation');
+                console.log(args);
+                users.push({ id: args.id, name: args.name });
                 return users;
             }
         }
