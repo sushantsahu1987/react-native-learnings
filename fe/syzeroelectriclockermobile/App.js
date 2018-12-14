@@ -21,8 +21,9 @@ export default class App extends Component<Props> {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <Text style={styles.welcome}>Font here is roboto medium!</Text>
+        <Text style={styles.stuff}>Font here is roboto regular!</Text>
+        <Text style={styles.instructions}>Font here is roboto thin italic!</Text>
         <Text style={styles.instructions}>{instructions}</Text>
       </View>
     );
@@ -37,11 +38,19 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   welcome: {
+    fontFamily: "Roboto-Medium",
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+  },
+  stuff: {
+    fontFamily: "Roboto-Regular",
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
   },
   instructions: {
+    fontFamily: "Roboto-ThinItalic",
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
