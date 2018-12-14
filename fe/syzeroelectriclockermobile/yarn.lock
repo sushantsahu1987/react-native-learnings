@@ -4180,6 +4180,10 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://artifactory.danskenet.net:443/artifactory/api/npm/joined-npm-build/require-main-filename/-/require-main-filename-1.0.1.tgz?dl=https://registry.npmjs.org/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
+reselect@^4.0.0:
+  version "4.0.0"
+  resolved "https://artifactory.danskenet.net:443/artifactory/api/npm/joined-npm-build/reselect/-/reselect-4.0.0.tgz?dl=https://registry.npmjs.org/reselect/-/reselect-4.0.0.tgz#f2529830e5d3d0e021408b246a206ef4ea4437f7"
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://artifactory.danskenet.net:443/artifactory/api/npm/joined-npm-build/resolve-cwd/-/resolve-cwd-2.0.0.tgz?dl=https://registry.npmjs.org/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
