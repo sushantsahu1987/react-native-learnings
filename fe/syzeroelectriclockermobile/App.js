@@ -6,53 +6,74 @@
  * @flow
  */
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from "react";
+import { createStackNavigator, createAppContainer } from "react-navigation";
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import Login1 from "./src/screens/Login1";
+import Login2 from "./src/screens/Login2";
 
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Font here is roboto medium!</Text>
-        <Text style={styles.stuff}>Font here is roboto regular!</Text>
-        <Text style={styles.instructions}>Font here is roboto thin italic!</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
-}
+import HomePage from "./src/screens/HomePage";
+import Settings from "./src/screens/Settings";
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontFamily: "Roboto-Medium",
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  stuff: {
-    fontFamily: "Roboto-Regular",
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    fontFamily: "Roboto-ThinItalic",
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+import AddAccount from './src/screens/AddAccount';
+import AddEntry from './src/screens/AddEntry';
+import EditEntry from './src/screens/EditEntry';
+import DeleteEntry from './src/screens/DeleteEntry';
+import ChangePassword from './src/screens/ChangePassword';
+
+const AppNavigator = createStackNavigator(
+    {
+      Login1Page: Login1,
+      Login2Page: Login2,
+      HomePage: {
+        screen: HomePage,
+        navigationOptions: () => ({
+          header: null
+        }),
+      },
+      SettingsPage: {
+        screen: Settings,
+        navigationOptions: () => ({
+          header: null,
+          mode: 'modal'
+        })
+      },
+      AddAccountPage: AddAccount,
+      AddEntryPage: AddEntry,
+      EditEntryPage: EditEntry,
+      DeleteEntryPage: DeleteEntry,
+      ChangePasswordPage: ChangePassword
+    },
+    {
+      initialRouteName: "Login1Page"
+    }
+);
+
+export default createAppContainer(AppNavigator);
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: "center",
+//     alignItems: "center",
+//     backgroundColor: "#F5FCFF"
+//   },
+//   welcome: {
+//     fontFamily: "Roboto-Medium",
+//     fontSize: 20,
+//     textAlign: "center",
+//     margin: 10
+//   },
+//   stuff: {
+//     fontFamily: "Roboto-Regular",
+//     fontSize: 20,
+//     textAlign: "center",
+//     margin: 10
+//   },
+//   instructions: {
+//     fontFamily: "Roboto-ThinItalic",
+//     textAlign: "center",
+//     color: "#333333",
+//     marginBottom: 5
+//   }
+// });
