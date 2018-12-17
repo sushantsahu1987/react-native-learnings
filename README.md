@@ -14,6 +14,7 @@ A secure credential manager for the paranoid
     8. styled-comp-bootstrap
     9. graphql-tutorial
     10. jsonserver-graphql-tutorial
+    11. react-hook
 
 ### Packages
 
