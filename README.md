@@ -47,61 +47,7 @@ A secure credential manager for the paranoid
       2. openssl rsa -in private.pem -outform PEM -pubout -out public.pem
 
     Generate pub & key.pem certificates on the fly using crypto or ursa :
-    1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto
-    
-    How to make http calls over graphql server:
-    1. Get Request:
-        http://localhost:3000/graphql?query={user(id:%2223%22){name}}
-        
-    2. Post Request:
-        http://localhost:3000/graphql
-        { "query": "mutation  ($id: String!, $name: String!) { addUser(id: $id, name: $name) { id, name } } ", 
-        "variables": { "id": "1", "name":"sushant" } }
-
-    
-    GraphQL 
-    1. Format:
-        query [name]{
-            [user](id:1) {
-                attr1,
-                attr2,
-            }
-        }
-        
-    2. Multiple Query:
-        {
-            result1: [user](id:1) {
-                attr1,
-                attr2,
-            }
-            result1: [user](id:1) {
-                attr1,
-                attr2,
-            }
-        }
-        
-    3. Query Fragment:
-        {
-            result1: [user](id:1) {
-                ...fragment_name
-            }
-            result1: [user](id:1) {
-                ...fragment_name
-            }
-        }
-        
-        fragment [fragment_name] on [Model] {
-            attr1,
-            attr2,
-        }
-        
-    4. Mutation:
-        mutation {
-            [fn-name](args) {
-                id,
-                name
-            }
-        }        
+    1. https://stackoverflow.com/questions/8520973/how-to-create-a-pair-private-public-keys-using-node-js-crypto        
 
 ### Help
 
