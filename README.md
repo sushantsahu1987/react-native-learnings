@@ -75,12 +75,3 @@ A secure credential manager for the paranoid
     5. Generate RSA Keys from command
     https://rietta.com/blog/2012/01/27/openssl-generating-rsa-key-from-command/
     https://github.com/ivan0124/Linux-programming/wiki/How-to-generate-RSA-public-and-private-keys(PEM-format)-with-openssl-%3F
-    
-    6. Redis
-    https://redislabs.com/
-    https://www.npmjs.com/package/redis
-    
-    7. Lowdb
-    https://www.npmjs.com/package/lowdb
-    
-    
